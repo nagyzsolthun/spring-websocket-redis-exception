@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+    id 'eclipse'
+    id 'org.springframework.boot' version '2.0.1.RELEASE'
+}
+
+apply plugin: 'io.spring.dependency-management'
+
+dependencies {
+    compile 'org.springframework.boot:spring-boot-starter-websocket'
+    compile 'org.springframework.session:spring-session-data-redis'
+    compile 'redis.clients:jedis:2.9.0'
+}
+
+repositories {
+    mavenCentral()
+}
